@@ -224,8 +224,11 @@ resource "aws_security_group_rule" "allow_all_outbound" {
 
 #terraform {
  # backend "s3" {
- #   key = "stage/services/webserver-cluster/terraform.tfstate"
- # }
+  #  key = "stage/services/webserver-cluster/terraform.tfstate"
+   # bucket = "usman-bucket"
+    #region = "us-east-2"
+
+  #}
 #}
 
 # Read Database connection state file from the S3 bucket of mysql/terraform.tfstate
